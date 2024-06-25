@@ -8,16 +8,21 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Account Login</title>
 </head>
-<body>
-<div class="container-fluid full-container d-flex flex-column gap-5  justify-content-center align-items-center">
+<body class="container-fluid full-container d-flex flex-column gap-5  justify-content-center align-items-center">
+<div class="login-container">
     <h3>Please enter your credentials to log in to your account</h3>
-    <form class="row">
+    <form class="row ">
         <div class="col">
             <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email">
         </div>
         <div class="col">
             <input type="password" class="form-control" id="formGroupExampleInput2"
                    placeholder="password">
+        </div>
+        <div class="btn-holder">
+            <button type="submit" class="btn btn-primary">
+                Login
+            </button>
         </div>
     </form>
 </div>
