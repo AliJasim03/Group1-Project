@@ -1,0 +1,76 @@
+/* This rule applies to the entire body of the HTML document */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family for the text */
+    margin: 20px; /* Sets the margin around the body */
+    padding: 0; /* Removes any padding inside the body */
+    background-color: #f4f4f4; /* Sets the background color of the body */
+}
+
+/* These rules apply to all h1, h2, and h3 headings */
+h1, h2, h3 {
+    color: #333; /* Sets the text color of the headings */
+}
+
+/* This rule applies to all tables */
+table {
+    width: 100%; /* Sets the width of the table to 100% of its container */
+    border-collapse: collapse; /* Collapses table borders into a single border */
+    margin-bottom: 20px; /* Adds a margin below the table */
+    background-color: #fff; /* Sets the background color of the table */
+}
+
+/* These rules apply to tables, table headers (th), and table cells (td) */
+table, th, td {
+    border: 1px solid #ddd; /* Adds a border to the table, headers, and cells */
+}
+
+/* These rules apply to table headers (th) and table cells (td) */
+th, td {
+    padding: 12px; /* Adds padding inside the headers and cells */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* This rule applies to table headers (th) */
+th {
+    background-color: #f2f2f2; /* Sets the background color of the headers */
+}
+
+/* This rule applies to even-numbered table rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Sets the background color of even rows */
+}
+
+/* These rules apply to labels, input fields, and buttons */
+label, input, button {
+    display: block; /* Makes each element start on a new line */
+    margin: 10px 0; /* Adds margin above and below each element */
+    padding: 10px; /* Adds padding inside each element */
+    font-size: 16px; /* Sets the font size */
+}
+
+/* These rules apply to input fields and buttons */
+input, button {
+    width: 200px; /* Sets the width */
+}
+
+/* This rule applies to buttons */
+button {
+    background-color: #4CAF50; /* Sets the background color */
+    color: white; /* Sets the text color */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+/* This rule applies to buttons when hovered over */
+button:hover {
+    background-color: #45a049; /* Changes the background color when hovering */
+}
+
+/* This rule applies to the error message div */
+#errorDiv {
+    color: red; /* Sets the text color */
+    border: 1px solid red; /* Adds a red border */
+    padding: 10px; /* Adds padding inside the div */
+    margin-top: 20px; /* Adds a margin at the top */
+    background-color: #f8d7da; /* Sets the background color */
+}
