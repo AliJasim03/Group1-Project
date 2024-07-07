@@ -1,0 +1,65 @@
+<!-- This line declares the document type as HTML5 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee List</title>
+    <!-- Link to the CSS file for styling the page -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>Employee List</h1>
+<!-- Table to display the list of employees -->
+<table id="employeeTable" border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Rows will be added here by JavaScript -->
+    </tbody>
+</table>
+
+<h2>Get Employee by ID</h2>
+<!-- Input field and button to fetch an employee by ID -->
+<label for="employeeId">Employee ID:</label>
+<input type="number" id="employeeId" name="employeeId">
+<button id="fetchEmployeeBtn">Fetch Employee</button>
+
+<!-- Div to display the fetched employee details -->
+<div id="employeeDetailns">
+    <h3>Employee Details</h3>
+    <p>ID: <span id="empId"></span></p>
+    <p>Name: <span id="empName"></span></p>
+    <p>Position: <span id="empPosition"></span></p>
+    <p>Salary: <span id="empSalary"></span></p>
+</div>
+
+<!-- Error message div -->
+<div id="errorDiv" class="error" style="display: none;">
+    <h2>Error</h2>
+    <p>Status Code: <span id="errorCode"></span></p>
+    <p>Message: <span id="errorMessage"></span></p>
+</div>
+
+<!-- Link to the JavaScript file for adding interactivity to the page -->
+<script src="/js/scripts.js"></script>
+</body>
+</html>
+
+<!-- Explanation:
+1. <!DOCTYPE html> declares the document type as HTML5.
+2. The <html> tag is the root element of the HTML document.
+3. The <head> section contains meta-information about the HTML document, including the title and links to stylesheets.
+4. The <body> section contains the content of the HTML document that will be displayed in the browser.
+5. <h1> and <h2> tags are used for headings.
+6. <table> is used to create a table for displaying the employee list.
+7. <thead> contains the table header, and <tbody> will be populated with rows by JavaScript.
+8. <label>, <input>, and <button> are used to create a form for fetching an employee by ID.
+9. <div> elements with IDs "employeeDetails" and "errorDiv" are used to display employee details and error messages, respectively.
+10. The <script> tag links to an external JavaScript file that will add interactivity to the page.
+
+Note: Spring Boot will serve this HTML file because it's located in the static folder. Any files placed in the static folder are automatically served by Spring Boot when the application runs.

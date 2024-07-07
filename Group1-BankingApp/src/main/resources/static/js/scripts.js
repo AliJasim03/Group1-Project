@@ -1,5 +1,5 @@
 // This function runs when the document is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Fetch all employees when the page loads
     fetchAllEmployees();
 
@@ -85,4 +85,40 @@ function showErrorDiv(error) {
 
     // Display the error div
     errorDiv.style.display = 'block'; // Make the error message div visible
+}
+
+const loginBtn = document.getElementById('loginBtn')
+loginBtn.addEventListener('click', handleLogin)
+
+function handleLogin() {
+    const email = document.getElementById('formGroupExampleInput').value;
+    const password = document.getElementById('formGroupExampleInput2').value;
+
+    // Simple client-side validation
+    if (!email || !password) {
+        alert('Please enter both email and password');
+        return;
+    }
+
+    // Send a request to your server
+    fetch('/api/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({email, password}),
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Redirect to dashboard if login is successful
+                window.location.href = '/dashboard.html';
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        });
 }
