@@ -107,11 +107,14 @@ function handleLogin() {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({email, password}),
+        credentials: "include"
     })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
                 // Redirect to dashboard if login is successful
+                // store email value in a cookie
+                localStorage.setItem("userEmail",email)
                 window.location.href = '/dashboard.html';
             } else {
                 alert('Invalid credentials. Please try again.');
@@ -122,3 +125,23 @@ function handleLogin() {
             alert('An error occurred. Please try again later.');
         });
 }
+
+function logout() {
+    fetch('/api/logout', {
+        method: 'POST',
+        credentials: 'include'
+    })
+        .then(() => {
+            localStorage.removeItem('userEmail');
+            window.location.href = '/';
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const userEmail = localStorage.getItem('userEmail');
+    if (!userEmail) {
+        window.location.href = '/';
+    }
+});

@@ -3,6 +3,8 @@ package com.example.group1bankingapp.controller;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +27,7 @@ public class AuthController {
 
     private void loadUsers() {
         ObjectMapper mapper = new ObjectMapper();
-        try {
+        try{
             users = mapper.readValue(
                     new ClassPathResource("users.json").getInputStream(),
                     new TypeReference<List<User>>() {
@@ -38,20 +40,33 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Map<String, Boolean>> login(@RequestBody LoginRequest loginRequest) {
-        System.out.println("Received login request for email: " + loginRequest.getEmail());
+    public ResponseEntity<Map<String, Boolean>> login(@RequestBody LoginRequest loginRequest, HttpServletResponse response) {
         boolean isValidUser = checkCredentials(loginRequest.getEmail(), loginRequest.getPassword());
-        System.out.println("Is valid user: " + isValidUser);
 
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("success", isValidUser);
+        if (isValidUser) {
+            Cookie cookie = new Cookie("user_session", loginRequest.getEmail());
+            cookie.setMaxAge(3600);
+            cookie.setPath("/");
+            cookie.setHttpOnly(true);
+            response.addCookie(cookie);
+        }
 
-        return ResponseEntity.ok(response);
+        Map<String, Boolean> responseBody = new HashMap<>();
+        responseBody.put("success", isValidUser);
+
+        return ResponseEntity.ok(responseBody);
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<Void> logout(HttpServletResponse response) {
+        Cookie cookie = new Cookie("user_session", null);
+        cookie.setMaxAge(0);
+        cookie.setPath("/");
+        response.addCookie(cookie);
+        return ResponseEntity.ok().build();
     }
 
     private boolean checkCredentials(String email, String password) {
-        System.out.println("Checking credentials for email: " + email);
-        System.out.println("Number of users in list: " + users.size());
         return users.stream()
                 .anyMatch(user -> {
                     boolean match = user.getEmail().equals(email) && user.getPassword().equals(password);
