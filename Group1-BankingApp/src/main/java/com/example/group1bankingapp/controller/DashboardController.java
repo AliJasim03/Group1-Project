@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DashboardController {
+
     @GetMapping("/dashboard")
-    public String dashboard(@CookieValue(name = "user_session",required = false) String userSession) {
+    public String dashboard(@CookieValue(name = "user_session", required = false) String userSession) {
         if (userSession == null) {
             return "redirect:/";
         }
-        return "dashboard";
+        return "forward:/dashboard.html";
     }
 }

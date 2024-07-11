@@ -87,8 +87,10 @@ function showErrorDiv(error) {
     errorDiv.style.display = 'block'; // Make the error message div visible
 }
 
-const loginBtn = document.getElementById('loginBtn')
-loginBtn.addEventListener('click', handleLogin)
+const loginBtn = document.getElementById('loginBtn');
+if (loginBtn) {
+    loginBtn.addEventListener('click', handleLogin);
+}
 
 function handleLogin() {
     const email = document.getElementById('formGroupExampleInput').value;
@@ -106,16 +108,14 @@ function handleLogin() {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({email, password}),
-        credentials: "include"
+        body: JSON.stringify({ email, password }),
+        credentials: 'include'
     })
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Redirect to dashboard if login is successful
-                // store email value in a cookie
-                localStorage.setItem("userEmail",email)
-                window.location.href = '/dashboard.html';
+                localStorage.setItem('userEmail', email);
+                window.location.href = '/dashboard';
             } else {
                 alert('Invalid credentials. Please try again.');
             }
@@ -138,10 +138,12 @@ function logout() {
         .catch(error => console.error('Error:', error));
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const userEmail = localStorage.getItem('userEmail');
     if (!userEmail) {
-        window.location.href = '/';
+        if (window.location.pathname !== '/') {
+            window.location.href = '/';
+        }
     }
 });
+

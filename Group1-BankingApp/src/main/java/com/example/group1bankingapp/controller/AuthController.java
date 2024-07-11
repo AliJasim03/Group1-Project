@@ -27,7 +27,7 @@ public class AuthController {
 
     private void loadUsers() {
         ObjectMapper mapper = new ObjectMapper();
-        try{
+        try {
             users = mapper.readValue(
                     new ClassPathResource("users.json").getInputStream(),
                     new TypeReference<List<User>>() {
@@ -68,13 +68,10 @@ public class AuthController {
 
     private boolean checkCredentials(String email, String password) {
         return users.stream()
-                .anyMatch(user -> {
-                    boolean match = user.getEmail().equals(email) && user.getPassword().equals(password);
-                    System.out.println("Checking user: " + user.getEmail() + ", match: " + match);
-                    return match;
-                });
+                .anyMatch(user -> user.getEmail().equals(email) && user.getPassword().equals(password));
     }
 }
+
 
 class LoginRequest {
     private String email;
