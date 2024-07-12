@@ -46,7 +46,7 @@ function fetchAllEmployees() {
                 tableBody.appendChild(row); // Add the row to the table body
             });
         })
-        .catch(error => showErrorDiv(error)); // Show an error message if something goes wrong
+        .catch(error => alert(error)); // Show an error message if something goes wrong
 }
 
 // Function to fetch a specific employee by ID from the server
@@ -70,12 +70,12 @@ function fetchEmployeeById() {
             document.getElementById('empSalary').textContent = employee.salary; // Set the text content for the salary
         })
         .catch(error => {
-            showErrorDiv(error); // Show an error message if something goes wrong
+            alert(error); // Show an error message if something goes wrong
         });
 }
 
 // Function to show an error message
-function showErrorDiv(error) {
+/*function showErrorDiv(error) {
     const errorDiv = document.getElementById('errorDiv'); // Get the error message div
     const [statusCode, errorMessage] = error.message.split(': '); // Split the error message into status code and message
 
@@ -85,7 +85,7 @@ function showErrorDiv(error) {
 
     // Display the error div
     errorDiv.style.display = 'block'; // Make the error message div visible
-}
+}*/
 
 const loginBtn = document.getElementById('loginBtn');
 if (loginBtn) {
@@ -93,8 +93,9 @@ if (loginBtn) {
 }
 
 function handleLogin() {
-    const email = document.getElementById('formGroupExampleInput').value;
-    const password = document.getElementById('formGroupExampleInput2').value;
+    debugger;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('pass').value;
 
     // Simple client-side validation
     if (!email || !password) {
@@ -147,3 +148,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+
+  document.getElementById("togglePassword").addEventListener("click", function () {
+      const passwordField = document.getElementById("pass");
+
+      const type =
+        passwordField.getAttribute("type") === "password" ? "text" : "password";
+
+      passwordField.setAttribute("type", type);
+
+      this.classList.toggle("bx-hide");
+
+      this.classList.toggle("bx-show");
+    });
