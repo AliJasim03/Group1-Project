@@ -1,6 +1,7 @@
 package com.example.group1bankingapp.controller;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.Cookie;
@@ -29,7 +30,7 @@ public class AuthController {
         ObjectMapper mapper = new ObjectMapper();
         try {
             users = mapper.readValue(
-                    new ClassPathResource("users.json").getInputStream(),
+                    new ClassPathResource("cust_details.json").getInputStream(),
                     new TypeReference<List<User>>() {
                     }
             );
@@ -67,6 +68,8 @@ public class AuthController {
     }
 
     private boolean checkCredentials(String email, String password) {
+        //get the user from the list of users from the json file list
+
         return users.stream()
                 .anyMatch(user -> user.getEmail().equals(email) && user.getPassword().equals(password));
     }
@@ -96,8 +99,25 @@ class LoginRequest {
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class User {
+    @JsonProperty("Email")
     private String email;
+    @JsonProperty("Password")
     private String password;
+
+    @JsonProperty("Full-Name")
+    private String fullName;
+
+    @JsonProperty("Balance")
+    private String balance;
+
+    @JsonProperty("Account Number")
+    private String accountNumber;
+
+    @JsonProperty("Address")
+    private String address;
+
+    @JsonProperty("Date of Birth")
+    private String dateOfBirth;
 
     public String getEmail() {
         return email;
@@ -113,5 +133,45 @@ class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getBalance() {
+        return balance;
+    }
+
+    public void setBalance(String balance) {
+        this.balance = balance;
     }
 }
