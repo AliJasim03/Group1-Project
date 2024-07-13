@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a7842d2-2c37-4aa7-a4ca-66388e977f7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/config/SwaggerConfig.java" afterDir="false" />
+    <list default="true" id="7a7842d2-2c37-4aa7-a4ca-66388e977f7e" name="Changes" comment="login ui changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/js/customer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/config/DBSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/config/DBSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/java/com/example/group1bankingapp/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Group1-BankingApp/src/main/resources/static/js/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AliJasim03&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AliJasim03/Group1-Project.git&quot;,
+    &quot;accountId&quot;: &quot;c5608bc6-af97-45c5-8434-bab823dbdfe4&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Group1-BankingApp/pom.xml" root0="SKIP_INSPECTION" />
   </component>
@@ -45,6 +69,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Group1BankingAppApplication.executor": "Debug",
     "DefaultHtmlFileTemplate": "HTML File",
     "Downloaded.Files.Path.Enabled": "false",
     "Maven.Group1-BankingApp [clean,install,-U].executor": "Run",
@@ -58,9 +83,12 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Group1BankingAppApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "jbr-17",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alija/OneDrive - Bahrain Polytechnic/Desktop/Group1/Group1-BankingApp/src/main/resources/static/js",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,11 +98,15 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alija\OneDrive - Bahrain Polytechnic\Desktop\Group1\Group1-BankingApp\src\main\resources\static\js" />
+      <recent name="C:\Users\alija\OneDrive - Bahrain Polytechnic\Desktop\Group1\Group1-BankingApp\src\main\resources\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kamil\IdeaProjects\Group1-Project\Group1-BankingApp\src\main\java\com\example" />
       <recent name="C:\Users\kamil\IdeaProjects\Group1-Project\Group1-BankingApp\src\main\resources\static\js" />
@@ -90,7 +122,20 @@
       <command value="mvn clean install -U" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Group1BankingAppApplication">
+    <configuration name="Group1BankingAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.group1bankingapp.Group1BankingAppApplication" />
+      <module name="Group1-BankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.group1bankingapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Group1BankingAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="jbr-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -101,14 +146,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Group1BankingAppApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,6 +170,23 @@
       <workItem from="1720773297861" duration="177000" />
       <workItem from="1720773540324" duration="2945000" />
     </task>
+    <task id="LOCAL-00001" summary="cust_details.json to use to login is done">
+      <option name="closed" value="true" />
+      <created>1720800256670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720800256670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="login ui changes">
+      <option name="closed" value="true" />
+      <created>1720801498437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720801498437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,5 +202,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cust_details.json to use to login is done" />
+    <MESSAGE value="login ui changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="login ui changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="users.get(6)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

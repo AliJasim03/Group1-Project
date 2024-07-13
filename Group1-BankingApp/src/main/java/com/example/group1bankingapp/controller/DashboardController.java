@@ -15,3 +15,4 @@ public class DashboardController {
         return "forward:/dashboard.html";
     }
 }
+

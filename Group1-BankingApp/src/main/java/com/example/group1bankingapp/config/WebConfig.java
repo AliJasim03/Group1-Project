@@ -14,6 +14,8 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authInterceptor).addPathPatterns("/dashboard");
+        registry.addInterceptor(authInterceptor)
+                .addPathPatterns("/dashboard")
+                .excludePathPatterns("/admin.html"); // Exclude admin.html from interceptor
     }
 }

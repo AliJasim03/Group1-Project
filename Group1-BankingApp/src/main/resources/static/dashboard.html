@@ -1,65 +1,101 @@
-<!-- This line declares the document type as HTML5 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Employee List</title>
-    <!-- Link to the CSS file for styling the page -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-<h1>Employee List</h1>
-<!-- Table to display the list of employees -->
-<table id="employeeTable" border="1">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Position</th>
-        <th>Salary</th>
-    </tr>
-    </thead>
-    <tbody>
-    <!-- Rows will be added here by JavaScript -->
-    </tbody>
-</table>
+<!-- Navbar top -->
+<div class="navbar-top">
+    <div class="title">
+        <h1>Profile</h1>
+    </div>
 
-<h2>Get Employee by ID</h2>
-<!-- Input field and button to fetch an employee by ID -->
-<label for="employeeId">Employee ID:</label>
-<input type="number" id="employeeId" name="employeeId">
-<button id="fetchEmployeeBtn">Fetch Employee</button>
-
-<!-- Div to display the fetched employee details -->
-<div id="employeeDetailns">
-    <h3>Employee Details</h3>
-    <p>ID: <span id="empId"></span></p>
-    <p>Name: <span id="empName"></span></p>
-    <p>Position: <span id="empPosition"></span></p>
-    <p>Salary: <span id="empSalary"></span></p>
+    <!-- Navbar -->
+    <ul>
+        <li>
+            <a href="/" id="logout-link">
+                <i class="fa fa-sign-out-alt fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+    <!-- End -->
 </div>
+<!-- End -->
 
-<!-- Error message div -->
-<div id="errorDiv" class="error" style="display: none;">
-    <h2>Error</h2>
-    <p>Status Code: <span id="errorCode"></span></p>
-    <p>Message: <span id="errorMessage"></span></p>
+<!-- Sidenav -->
+<div class="sidenav">
+    <div class="profile">
+        <img src="https://th.bing.com/th/id/OIP.XA3Zuj8Q-MK7JRbe9s2O-wHaHa?rs=1&pid=ImgDetMain" alt="" width="100" height="100">
+
+        <div class="name">
+            CitiBank
+        </div>
+<!--        <div class="job">-->
+<!--            Web Developer-->
+<!--        </div>-->
+    </div>
+
+    <div class="sidenav-url">
+        <div class="url">
+            <a href="#profile" class="active">Profile</a>
+        </div>
+
+    </div>
 </div>
+<!-- End -->
 
-<!-- Link to the JavaScript file for adding interactivity to the page -->
-<script src="/js/scripts.js"></script>
+<!-- Main -->
+<div class="main">
+    <h2>IDENTITY</h2>
+    <div class="card">
+        <div class="card-body">
+            <i class="fa fa-pen fa-xs edit"></i>
+            <table>
+                <tbody id="customer-info">
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td id="customer-name">Loading...</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td id="customer-email">Loading...</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td id="customer-address">Loading...</td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td>:</td>
+                    <td id="customer-balance">Loading...</td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td id="customer-account-number">Loading...</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>:</td>
+                    <td id="customer-dob">Loading...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- End -->
+<script src="/js/customer.js"></script>
 </body>
 </html>
-
-<!-- Explanation:
-1. <!DOCTYPE html> declares the document type as HTML5.
-2. The <html> tag is the root element of the HTML document.
-3. The <head> section contains meta-information about the HTML document, including the title and links to stylesheets.
-4. The <body> section contains the content of the HTML document that will be displayed in the browser.
-5. <h1> and <h2> tags are used for headings.
-6. <table> is used to create a table for displaying the employee list.
-7. <thead> contains the table header, and <tbody> will be populated with rows by JavaScript.
-8. <label>, <input>, and <button> are used to create a form for fetching an employee by ID.
-9. <div> elements with IDs "employeeDetails" and "errorDiv" are used to display employee details and error messages, respectively.
-10. The <script> tag links to an external JavaScript file that will add interactivity to the page.
-
-Note: Spring Boot will serve this HTML file because it's located in the static folder. Any files placed in the static folder are automatically served by Spring Boot when the application runs.

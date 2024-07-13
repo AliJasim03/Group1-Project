@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1>Customer List</h1>
+    <table id="customerTable" class="table table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Balance</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Rows will be added here by JavaScript -->
+        </tbody>
+    </table>
+
+    <h2>Get Customer by ID</h2>
+    <div class="form-group">
+        <label for="customerId">Customer ID:</label>
+        <input type="number" id="customerId" name="customerId" class="form-control">
+    </div>
+    <button id="fetchCustomerBtn" class="btn btn-primary mb-5">Fetch Customer</button>
+
+    <div id="customerDetails" class="card mb-5" style="display: none;">
+        <div class="card-header">
+            Customer Details
+        </div>
+        <div class="card-body">
+            <p>ID: <span id="custId"></span></p>
+            <p>Full Name: <span id="custFullName"></span></p>
+            <p>Email: <span id="custEmail"></span></p>
+            <p>Balance: <span id="custBalance"></span></p>
+            <p>Account Number: <span id="custAccountNumber"></span></p>
+            <p>Address: <span id="custAddress"></span></p>
+            <p>Date of Birth: <span id="custDOB"></span></p>
+        </div>
+    </div>
+
+    <div id="errorDiv" class="alert alert-danger mt-5" style="display: none;">
+        <h4>Error</h4>
+        <p>Status Code: <span id="errorCode"></span></p>
+        <p>Message: <span id="errorMessage"></span></p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>
