@@ -1,0 +1,128 @@
+[
+  {
+    "Full-Name": "James Smith",
+    "Email": "J.Smith1970@email.com",
+    "Password": "Password123",
+    "Balance": "£3,400",
+    "Account Number": 23860845,
+    "Address": "345 Main St, Belfast",
+    "Date of Birth": "23/06/1970"
+  },
+  {
+    "Full-Name": "Sarah Jones",
+    "Email": "Sarah.J23@email.com",
+    "Password": "Bananas123",
+    "Balance": "£150",
+    "Account Number": 74902652,
+    "Address": "450 Key Lane, Lurgan",
+    "Date of Birth": "09/04/2001"
+  },
+  {
+    "Full-Name": "John Daley ",
+    "Email": "John_Daley123@email.com",
+    "Password": "Password34",
+    "Balance": "£600,000",
+    "Account Number": 38956739,
+    "Address": "23 Pine Lane, Belfast",
+    "Date of Birth": "19/05/1969"
+  },
+  {
+    "Full-Name": "Cora Rodgers",
+    "Email": "CRodgers234@email.com",
+    "Password": "Bank345",
+    "Balance": "£4500",
+    "Account Number": 98340756,
+    "Address": "130 Oak Road, Belfast",
+    "Date of Birth": "30/01/1982"
+  },
+  {
+    "Full-Name": "Catrina McCabe",
+    "Email": "CatMcCabe1990@email.com",
+    "Password": "Password435",
+    "Balance": "100,000",
+    "Account Number": 34120993,
+    "Address": "23 High St, Bangor",
+    "Date of Birth": "23/09/1990"
+  },
+  {
+    "Full-Name": "Robert Tracey",
+    "Email": "Robert_T2020@email.com",
+    "Password": "TraceyR245",
+    "Balance": "£45098",
+    "Account Number": 20964829,
+    "Address": "14 key lane, Newry",
+    "Date of Birth": "12/08/2003"
+  },
+  {
+    "Full-Name": "Jessica Bowles",
+    "Email": "Jessy.B34@email.com",
+    "Password": "LiverpoolFC23",
+    "Balance": "£9023",
+    "Account Number": 97503756,
+    "Address": " 2 Golf St, Enniskillen",
+    "Date of Birth": "31/05/1987"
+  },
+  {
+    "Full-Name": "Jamie Johnson",
+    "Email": "JamieJ23@email.com",
+    "Password": "Login234",
+    "Balance": "£67823",
+    "Account Number": 34898649,
+    "Address": "90 Sparrow Street, Belfast",
+    "Date of Birth": "14/07/2000"
+  },
+  {
+    "Full-Name": "Ciara Clarke",
+    "Email": "cclarke90@email.com",
+    "Password": "Srtawberries45",
+    "Balance": "£34512",
+    "Account Number": 8709785,
+    "Address": "13 Ash Road, Belfast",
+    "Date of Birth": "23/04/1967"
+  },
+  {
+    "Full-Name": "Colin Campbell",
+    "Email": "ColinCampb2030@email.com",
+    "Password": "ManUtd23",
+    "Balance": "£1900",
+    "Account Number": 5964729,
+    "Address": "34 Shore Road, Belfast",
+    "Date of Birth": "15/08/2002"
+  },
+  {
+    "Full-Name": "Chris Baxter",
+    "Email": "cbaxter82@email.com",
+    "Password": "Football23",
+    "Balance": "£897087",
+    "Account Number": 34795098,
+    "Address": "16 Elm St, Bangor",
+    "Date of Birth": "12/03/2001"
+  },
+  {
+    "Full-Name": "Stacy Swift",
+    "Email": "stacy123swift@email.com",
+    "Password": "Password34",
+    "Balance": "£450098",
+    "Account Number": 34908578,
+    "Address": "123 church lane, Belfast",
+    "Date of Birth": "06/06/1976"
+  },
+  {
+    "Full-Name": "Barbara Thompson",
+    "Email": "Barb.Thomp23@email.com",
+    "Password": "Barbie345",
+    "Balance": "£123098",
+    "Account Number": 38087669,
+    "Address": "54 Zoo Lane , Belfast",
+    "Date of Birth": "23/09/1954"
+  },
+  {
+    "Full-Name": "Cody Smith",
+    "Email": "c.smith34@email.com",
+    "Password": "password56",
+    "Balance": "£450",
+    "Account Number": 87694524,
+    "Address": "12 Oak Ave, Belfast",
+    "Date of Birth": "12/12/2000"
+  }
+]
