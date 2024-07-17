@@ -1,0 +1,223 @@
+[
+  {
+    "Full-Name": "James Smith",
+    "Email": "J.Smith1970@email.com",
+    "Password": "Password123",
+    "Balance": "£3,400",
+    "Account Number": 23860845,
+    "Address": "345 Main St, Belfast",
+    "Date of Birth": "23/06/1970",
+    "transactions": [
+      {"transactionName": "-£23.50"},
+      {"asda": "-£103.10"},
+      {"spotifySubscription": "-£10.99"},
+      {"UlsterBus": "-£7.30"},
+      {"HatfieldPub": "-£45"},
+      {"Vinted": "+£24.60"},
+      {"BankTransfer": "+£300.00"}
+    ]
+  },
+  {
+    "Full-Name": "Sarah Jones",
+    "Email": "Sarah.J23@email.com",
+    "Password": "Bananas123",
+    "Balance": "£150",
+    "Account Number": 74902652,
+    "Address": "450 Key Lane, Lurgan",
+    "Date of Birth": "09/04/2001",
+    "transactions": [
+      {"netflix": "-£8.99"},
+      {"ATM": "-£20"},
+      {"Spar": "-£39.74"},
+      {"Omniplex": "-£57.80"},
+      {"EasyJet": "-£650.00"},
+      {"RevolutTransfer": "+£60.00"},
+      {"PLTRefund": "+£82.90"},
+      {"PayCheck": "+£1000.00"}
+    ]
+  },
+  {
+    "Full-Name": "John Daley",
+    "Email": "John_Daley123@email.com",
+    "Password": "Password34",
+    "Balance": "£600,000",
+    "Account Number": 38956739,
+    "Address": "23 Pine Lane, Belfast",
+    "Date of Birth": "19/05/1969",
+    "transactions": [
+      {"Rent": "-£350.00"},
+      {"PetsAtHome": "-£12.49"},
+      {"Ticketmaster": "-£570.00"},
+      {"Lidl": "-£98.99"},
+      {"Paycheck": "+£5000.00"},
+      {"AmazonRefund": "+£54.30"},
+      {"RevolutTransfer": "+£30.00"}
+    ]
+  },
+  {
+    "Full-Name": "Cora Rodgers",
+    "Email": "CRodgers234@email.com",
+    "Password": "Bank345",
+    "Balance": "£4500",
+    "Account Number": 98340756,
+    "Address": "130 Oak Road, Belfast",
+    "Date of Birth": "30/01/1982",
+    "transactions": [
+      {"ElectricityBill": "-£109.00"},
+      {"DepopSale1": "+£23.50"},
+      {"DepopSale2": "+£13.00"},
+      {"Rent": "-£240.00"},
+      {"SparPaycheck": "+£250.00"},
+      {"CleaningPaycheck": "+£300.00"},
+      {"HairSalon": "-£120.00"}
+    ]
+  },
+  {
+    "Full-Name": "Catrina McCabe",
+    "Email": "CatMcCabe1990@email.com",
+    "Password": "Password435",
+    "Balance": "£100,000",
+    "Account Number": 34120993,
+    "Address": "23 High St, Bangor",
+    "Date of Birth": "23/09/1990",
+    "transactions": [
+      {"disneyPlus": "-£7.99"},
+      {"PaycheckFullTime": "+£2500.00"},
+      {"PaycheckPartTime": "+£250.00"},
+      {"SkyBroadband": "-£79.00"},
+      {"NailAppointment": "-£45.00"},
+      {"ATMWithdrawal": "-£20.00"},
+      {"McDonald's": "-£12.00"}
+    ]
+  },
+  {
+    "Full-Name": "Robert Tracey",
+    "Email": "Robert_T2020@email.com",
+    "Password": "TraceyR245",
+    "Balance": "£45098",
+    "Account Number": 20964829,
+    "Address": "14 Key Lane, Newry",
+    "Date of Birth": "12/08/2003",
+    "transactions": [
+      {"Asda": "-£87.25"},
+      {"Deliveroo": "-£26.50"},
+      {"BankTransfer": "+£300.00"},
+      {"TenantPayment": "+£350.00"},
+      {"Pension": "+£1200.00"},
+      {"BTSports": "-£55.00"},
+      {"IMCCinema": "-£12.50"},
+      {"ATMWithdrawal": "-£45.00"}
+    ]
+  },
+  {
+    "Full-Name": "Jessica Bowles",
+    "Email": "Jessy.B34@email.com",
+    "Password": "LiverpoolFC23",
+    "Balance": "£9023",
+    "Account Number": 97503756,
+    "Address": "2 Golf St, Enniskillen",
+    "Date of Birth": "31/05/1987",
+    "transactions": [
+      {"Rent": "-£500.00"},
+      {"Paycheck": "+£3500.00"},
+      {"MaxolPetrol": "-£50.00"},
+      {"CarInsurance": "-£30.00"},
+      {"Costcutter": "-£39.35"},
+      {"RevolutTransfer": "+£90.00"},
+      {"Bet365": "-£5.00"},
+      {"EEContract": "-£35.00"}
+    ]
+  },
+  {
+    "Full-Name": "Jamie Johnson",
+    "Email": "JamieJ23@email.com",
+    "Password": "Login234",
+    "Balance": "£67823",
+    "Account Number": 34898649,
+    "Address": "90 Sparrow Street, Belfast",
+    "Date of Birth": "14/07/2000",
+    "transactions": [
+      {"Week1Pay": "+£80.46"},
+      {"Spar": "-£19.99"},
+      {"PostOffice": "-£22.50"},
+      {"Week2Pay": "+£110.82"},
+      {"JDSports": "-£120.50"},
+      {"BankTransfer": "+£45.00"},
+      {"omniplex": "-£22.30"}
+    ]
+  },
+  {
+    "Full-Name": "Ciara Clarke",
+    "Email": "cclarke90@email.com",
+    "Password": "Strawberries45",
+    "Balance": "£34512",
+    "Account Number": 8709785,
+    "Address": "13 Ash Road, Belfast",
+    "Date of Birth": "23/04/1967",
+    "transactions": [
+      {"Week1Pay": "+£80.46"},
+      {"Spar": "-£19.99"},
+      {"PostOffice": "-£22.50"},
+      {"Week2Pay": "+£110.82"},
+      {"JDSports": "-£120.50"},
+      {"BankTransfer": "+£45.00"},
+      {"omniplex": "-£22.30"}
+    ]
+  },
+  {
+    "Full-Name": "Colin Campbell",
+    "Email": "ColinCampb2030@email.com",
+    "Password": "ManUtd23",
+    "Balance": "£1900",
+    "Account Number": 5964729,
+    "Address": "34 Shore Road, Belfast",
+    "Date of Birth": "15/08/2002",
+    "transactions": [
+      {"SpotifyFamily": "-£20.99"},
+      {"Paycheck": "+£4000.00"},
+      {"Uber": "-£8.99"},
+      {"JustEat": "£32.80"},
+      {"NextRefund": "+£59.00"},
+      {"SavingsTransfer": "£200.00"},
+      {"Childcare": "-£75.00"}
+    ]
+  },
+  {
+    "Full-Name": "Chris Baxter",
+    "Email": "cbaxter82@email.com",
+    "Password": "Football23",
+    "Balance": "£897087",
+    "Account Number": 34795098,
+    "Address": "16 Elm St, Bangor",
+    "Date of Birth": "12/03/2001",
+    "transactions": [
+      {"Rent": "-£600"},
+      {"Electricity": "-£60"},
+      {"Spotify": "-£8.99"},
+      {"Netflix": "-£10.99"},
+      {"Tesco": "-£97.34"},
+      {"Paycheck": "+£5000.00"},
+      {"KFC": "-£34.99"},
+      {"ASOS": "-£67.00"},
+      {"AdidasRefund": "+£56.80"}
+    ]
+  },
+  {
+    "Full-Name": "Stacy Swift",
+    "Email": "stacy123swift@email.com",
+    "Password": "Password34",
+    "Balance": "£450098",
+    "Account Number": 34908578,
+    "Address": "123 church lane, Belfast",
+    "Date of Birth": "06/06/1978",
+    "transactions": [
+      {"Rent": "-£350.00"},
+      {"PetsAtHome": "-£12.49"},
+      {"Ticketmaster": "-£570.00"},
+      {"Lidl": "-£98.99"},
+      {"Paycheck": "+£5000.00"},
+      {"AmazonRefund": "+£54.30"},
+      {"RevolutTransfer": "+£30.00"}
+    ]
+  }
+]
