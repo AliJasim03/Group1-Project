@@ -23,13 +23,42 @@ function fetchCustomerByEmail() {
         })
         .then(response => response.json())
         .then(data => {
-           // Handle the server response here
+            // Handle the server response here
             document.getElementById('customer-name').innerText = data['Full-Name'];
             document.getElementById('customer-email').innerText = data['Email'];
             document.getElementById('customer-address').innerText = data['Address'];
             document.getElementById('customer-balance').innerText = data['Balance'];
             document.getElementById('customer-account-number').innerText = data['Account Number'];
             document.getElementById('customer-dob').innerText = data['Date of Birth'];
+
+            // Clear the existing transactions
+            const transactionsList = document.getElementById('transactions-list');
+            transactionsList.innerHTML = '';
+
+            // Populate the transactions
+            data.transactions.forEach(transaction => {
+                const transactionRow = document.createElement('tr');
+                const transactionNameCell = document.createElement('td');
+                const transactionAmountCell = document.createElement('td');
+
+                const transactionName = transaction.name;
+                const transactionAmount = transaction.amount;
+
+                transactionNameCell.innerText = transactionName;
+                transactionAmountCell.innerText = transactionAmount;
+
+                // Apply color based on the amount
+                if (transactionAmount.startsWith('-')) {
+                    transactionAmountCell.style.color = 'red';
+                } else {
+                    transactionAmountCell.style.color = 'green';
+                }
+
+                transactionRow.appendChild(transactionNameCell);
+                transactionRow.appendChild(transactionAmountCell);
+
+                transactionsList.appendChild(transactionRow);
+            });
         })
         .catch(error => {
             console.error("Error fetching customer data:", error);
@@ -51,3 +80,19 @@ function logout() {
     // Redirect to the login page
     window.location.href = '/'; // Adjust the path to your login page as necessary
 }
+
+document.getElementById('profile-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('profile-card').classList.remove('hidden');
+    document.getElementById('transactions-card').classList.add('hidden');
+    this.classList.add('active');
+    document.getElementById('transactions-link').classList.remove('active');
+});
+
+document.getElementById('transactions-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('profile-card').classList.add('hidden');
+    document.getElementById('transactions-card').classList.remove('hidden');
+    this.classList.add('active');
+    document.getElementById('profile-link').classList.remove('active');
+});

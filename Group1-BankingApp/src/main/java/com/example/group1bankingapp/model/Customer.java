@@ -2,12 +2,13 @@ package com.example.group1bankingapp.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "customers")
@@ -38,6 +39,10 @@ public class Customer {
 
     @JsonProperty("Date of Birth")
     private String dateOfBirth;
+
+    @ElementCollection
+    @JsonProperty("transactions")
+    private List<Transaction> transactions;
 
     // Getters and Setters
     public Long getId() {
@@ -102,5 +107,13 @@ public class Customer {
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public List<Transaction> getTransactions() {
+        return transactions;
+    }
+
+    public void setTransactions(List<Transaction> transactions) {
+        this.transactions = transactions;
     }
 }

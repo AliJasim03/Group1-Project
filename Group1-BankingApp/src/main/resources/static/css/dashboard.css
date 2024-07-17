@@ -196,5 +196,7 @@ body {
 .fa-snapchat:hover {
     color: #fffb01 !important;
 }
-
+.hidden {
+    display: none;
+}
 /* End */
