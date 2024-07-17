@@ -176,9 +176,9 @@
       {"SpotifyFamily": "-£20.99"},
       {"Paycheck": "+£4000.00"},
       {"Uber": "-£8.99"},
-      {"JustEat": "£32.80"},
+      {"JustEat": "-£32.80"},
       {"NextRefund": "+£59.00"},
-      {"SavingsTransfer": "£200.00"},
+      {"SavingsTransfer": "-£200.00"},
       {"Childcare": "-£75.00"}
     ]
   },
